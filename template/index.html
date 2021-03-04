@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF report from JSON</title>
+</head>
+<body>
+<ul>{{ range . }}
+    <li><a href="{{ . }}.pdf">{{ . }}</a></li>{{ end }}
+</ul>
+</body>
+</html>
